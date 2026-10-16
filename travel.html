@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>Travel booking</h2>
+        <ul>
+            <li><a >Home</a></li>
+            <li><a>Travel</a></li>
+            <li><a >Bookings</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Explore the World with Travel Booking</h1>
+        <p>Plan your journey, send packages, and manage bookings.</p>
+    </section>
+
+    <section class="container" id="travel">
+
+        <div class="card">
+            <h2>Travel Destination</h2>
+            <p>Discover new destinations and plan your next trip.</p>
+            <button onclick="showSection('travelForm')">
+                Explore Destinations
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Send Packages</h2>
+            <p>Send your packages safely to your desired location.</p>
+            <button onclick="showSection('packageForm')">
+                Send Package
+            </button>
+        </div>
+
+        <div class="card" id="bookings">
+            <h2>Booking Details</h2>
+            <p>View your travel and package booking information.</p>
+            <button onclick="showSection('bookingDetails')">
+                View Bookings
+            </button>
+        </div>
+
+    </section>
+
+    <section id="result"></section>
+
+    <footer id="contact">
+        <h2>TravelGo</h2>
+        <p>Contact: travel booking</p>
+        <p>Email: travelbooking@gmail.com</p>
+        <p>Phone: +91 7674123401</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* Navigation */
+nav {
+    background: black;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.hero {
+    text-align: center;
+    padding: 65px 20px 35px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #666;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 35px 8% 60px;
+}
+
+.card {
+    background: white;
+    width: 100%;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000015;
+    transition: 0.3s;
+}
+
+
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: orange;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer p {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+
+@media (max-width: 750px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
